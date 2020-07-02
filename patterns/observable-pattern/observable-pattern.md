@@ -35,8 +35,6 @@ Interface que contém os métodos para registrar, remover e notificar objetos `o
 
 * `void notifyObservers()` - aqui não há implementação mas esse método será usado para notificar um observer registrado quando houver mudança do estado interno do `subject`
 
-* `void register(Observer o)` - aqui não há implementação mas esse método será usado para adicionar um observer à lista de observers na classe `Subject`.
-
 ```java
 public interface ISubject {
     void register(Observer o);
