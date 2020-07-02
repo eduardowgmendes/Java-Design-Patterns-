@@ -17,7 +17,7 @@ Nós teremos vários diretórios no repositório onde os padrões serão separad
 * ![Builder](#)
 * ![Prototype](#)
 * ![Singleton](#) 
-### Estrutural
+### Estruturais
 * ![Adapter](#)
 * ![Bridge](#)
 * ![Composite](#)
