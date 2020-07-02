@@ -17,6 +17,7 @@ Trazendo esse cenário para o desenvolvimento de software, considere por exemplo
 Vamos compreender em um exemplo prático como funciona esse padrão de projeto. Aqui nós criaremos um observer (você poderia criar mais do que um) e um subject. O subject mantém uma lista de todos os `observers` (neste exemplo temos apenas um apenas para simplificar). Nosso observer quer ser notificado quando o valor de um atributo do `subject` chamado `flag` mudar. Analisando a saída desse exemplo você perceberá que o observer realmente é notificado quando o valor é modificado no `subject` para 5 ou 25. Mas não há nenhuma notificação quando o valor é modificado para 50 porque dessa vez o `observer` foi desligado do `subject` na chamada ao método `void unregister(Observer o)`.     
 
 ### Observer.java
+Este é o Observer que será notificado quando houver mudanças no estado interno da classe Subject 
 ```java
 public class Observer {
     public void update() {
@@ -26,6 +27,16 @@ public class Observer {
 
 ```
 ### ISubject.java
+Interface que contém os métodos para registrar, remover e notificar objetos `observer`:
+
+* `void register(Observer o)` - aqui não há implementação mas esse método será usado para adicionar um observer à lista de observers na classe `Subject`. 
+ 
+* `void unregister(Observer o)` - aqui não há implementação mas esse método será usado para remover um observer da lista de observers na classe `Subject`.
+
+* `void notifyObservers()` - aqui não há implementação mas esse método será usado para notificar um observer registrado quando houver mudança do estado interno do `subject`
+
+* `void register(Observer o)` - aqui não há implementação mas esse método será usado para adicionar um observer à lista de observers na classe `Subject`.
+
 ```java
 public interface ISubject {
     void register(Observer o);
@@ -37,6 +48,7 @@ public interface ISubject {
 ```
 
 ### Subject.java
+Classe que será nosso Subject nesse exemplo. Aqui ela implementa a interface `ISubject` com os métodos citados acima. Note que temos uma lista com todos os `observers` além do atributo `flag` que modificaremos durante o exemplo.
 ```java
 public class Subject implements ISubject {
 
@@ -73,6 +85,7 @@ public class Subject implements ISubject {
 ```
 
 ### ObserverExample.java
+Classe principal onde testaremos o exemplo. Note que logo após a chamada ao método `void unregister(Observer o)` o `observer` não é mais notificado sobre a mudança do estado interno de `subject` representado sobre o atributo `flag` que modificaremos para o valor 50. 
 ```java
 public class ObserverExample {
 
@@ -94,3 +107,15 @@ public class ObserverExample {
     }
 }
 ```
+
+### Saída no Console 
+```
+Setting flag: 5
+Flag value changed in Subject
+Setting flag: 25
+Flag value changed in Subject
+Setting flag: 50
+
+Process finished with exit code 0
+```
+
