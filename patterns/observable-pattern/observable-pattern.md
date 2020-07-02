@@ -10,4 +10,13 @@ Nesse padrão de projeto existem muitos objetos observadores chamados de `observ
 Nós podemos ilustrar esse padrão pensando em uma celebridade que possui muitos fãs. Cada um desses fãs querem saber todas as últimas notícias e atualizações de sua celebridade favorita. Então eles podem seguí-la por um determinado período de tempo enquanto o interesse persistir. Quando eles perdem o interesse, eles simplesmente deixam de seguir essa celebridade. Podemos dizer que o fã é um observer e a celebridade seria o subject.
 
 ### Exemplo Computacional
-Trazendo esse cenário para o desenvolvimento de software, considere por exemplo uma aplicação qualquer que possui uma interface gráfica e essa aplicação está conectada a um banco de dados (ou a alguma lógica de negócio). Um usuário pode executar alguma query através da interface gráfica como em um campo de pesquisa por exemplo e a aplicação busca no banco de dados os resultados e reflete de volta esses dados para o usuário na interface gráfica. As duas camadas da aplicação são obviamente são separadas e quando uma mudança ocorre na base de dados, a interface gráfica deve ser notificada e atualizada exibindo essa mudança.                       
+Trazendo esse cenário para o desenvolvimento de software, considere por exemplo uma aplicação qualquer que possui uma interface gráfica e essa aplicação está conectada a um banco de dados (ou a alguma lógica de negócio). Um usuário pode executar alguma query através da interface gráfica como em um campo de pesquisa por exemplo e a aplicação busca no banco de dados os resultados e reflete de volta esses dados para o usuário na interface gráfica. As duas camadas da aplicação são obviamente são separadas e quando uma mudança ocorre na base de dados, a interface gráfica deve ser notificada e atualizada exibindo essa mudança.   
+
+```java
+public class Observer {
+    public void update() {
+        System.out.println("Flag value changed in Subject");
+    }
+}
+
+```                    
