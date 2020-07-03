@@ -217,7 +217,7 @@ public class Subject implements ISubject {
 ```
 
 ### ObserverExample.java 
-O mais interessante é que agora se você notar a chamada do método unregister nós estamos desligando apenas o observer1 e apenas ele não será mais notificado das mudanças que ocorrem no subject.
+O mais interessante é que agora se você notar a chamada do método `void unregister(IObserver o)` nós estamos desligando apenas o `observer1` e apenas ele não será mais notificado das mudanças que ocorrem no subject.
 ```java
 public class ObserverExample {
 
