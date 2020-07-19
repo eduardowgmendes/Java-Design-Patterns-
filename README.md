@@ -20,10 +20,10 @@ Nós teremos vários diretórios no repositório onde os padrões serão separad
 | Prototype  | Decorator  |Iterator|
 | Singleton  | Façade  |Mediator|
 | Abstract Factory  | Flyweight  |Memento|
-| Abstract Factory  | Proxy   | ![Observer](https://github.com/eduardowgmendes/Java-Design-Patterns-/blob/master/patterns/observable-pattern/observable-pattern.md#padr%C3%A3o-observer)|
-| Abstract Factory  | Flyweight  |State|
-| Abstract Factory  | Flyweight  |Strategy|
-| Abstract Factory  | Flyweight  |Visitor|
+|   | Proxy   | ![Observer](https://github.com/eduardowgmendes/Java-Design-Patterns-/blob/master/patterns/observable-pattern/observable-pattern.md#padr%C3%A3o-observer)|
+|   |   |State|
+|   |   |Strategy|
+|   |   |Visitor|
 
 ### Criacionais
 * Factory Method
