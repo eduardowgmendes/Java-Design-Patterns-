@@ -12,27 +12,27 @@ Cada uma das definições de padrões será apresentada da seguinte maneira:
 Nós teremos vários diretórios no repositório onde os padrões serão separados pelos seus assuntos e as três principais categorias de padrões como Criacionais, Comportamentais e Estruturais. 
 
 ### Criacionais
-* ![Factory Method]()
-* ![Abstract Factory](#)
-* ![Builder](#)
-* ![Prototype](#)
-* ![Singleton](#) 
+* Factory Method
+* Abstract Factory
+* Builder
+* Prototype
+* Singleton 
 ### Estruturais
-* ![Adapter](#)
-* ![Bridge](#)
-* ![Composite](#)
-* ![Decorator](#)
-* ![Façade](#)
-* ![Flyweight](#)
-* ![Proxy](#) 
+* Adapter
+* Bridge
+* Composite
+* Decorator
+* Façade
+* Flyweight
+* Proxy 
 ### Comportamentais
-* ![Interpreter](#)
-* ![Template Method](#)
-* ![Chain of Responsability](#)
-* ![Iterator](#)
-* ![Mediator](#)
-* ![Memento](#)
+* Interpreter
+* Template Method
+* Chain of Responsability
+* Iterator
+* Mediator
+* Memento
 * ![Observer](https://github.com/eduardowgmendes/Java-Design-Patterns-/blob/master/patterns/observable-pattern/observable-pattern.md#padr%C3%A3o-observer)
-* ![State](#)
-* ![Strategy](#)
-* ![Visitor](#)    
+* State
+* Strategy
+* Visitor    
