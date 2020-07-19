@@ -11,6 +11,12 @@ Cada uma das definições de padrões será apresentada da seguinte maneira:
 ### Organização do Repositório
 Nós teremos vários diretórios no repositório onde os padrões serão separados pelos seus assuntos e as três principais categorias de padrões como Criacionais, Comportamentais e Estruturais. 
 
+
+| Criacionais   | Estruturais   | Comportamentais |
+| ------------- | ------------- | --------------- | 
+| * Factory Method  | Content Cell  |                 |
+| Content Cell  | Content Cell  |                 |
+
 ### Criacionais
 * Factory Method
 * Abstract Factory
