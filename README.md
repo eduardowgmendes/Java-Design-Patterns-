@@ -14,8 +14,16 @@ Nós teremos vários diretórios no repositório onde os padrões serão separad
 
 | Criacionais   | Estruturais   | Comportamentais |
 | ------------- | ------------- | --------------- | 
-| * Factory Method  | Content Cell  |                 |
-| Content Cell  | Content Cell  |                 |
+| Factory Method  | Adapter  |Interpreter|
+| Abstract Factory  | Bridge  |Template Method|
+| Builder  | Composite  |Chain of Responsability|
+| Prototype  | Decorator  |Iterator|
+| Singleton  | Façade  |Mediator|
+| Abstract Factory  | Flyweight  |Memento|
+| Abstract Factory  | Proxy   | ![Observer](https://github.com/eduardowgmendes/Java-Design-Patterns-/blob/master/patterns/observable-pattern/observable-pattern.md#padr%C3%A3o-observer)|
+| Abstract Factory  | Flyweight  |State|
+| Abstract Factory  | Flyweight  |Strategy|
+| Abstract Factory  | Flyweight  |Visitor|
 
 ### Criacionais
 * Factory Method
