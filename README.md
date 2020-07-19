@@ -12,7 +12,7 @@ Cada uma das definições de padrões será apresentada da seguinte maneira:
 Nós teremos vários diretórios no repositório onde os padrões serão separados pelos seus assuntos e as três principais categorias de padrões como Criacionais, Comportamentais e Estruturais. 
 
 ### Criacionais
-* ![Factory Method](#)
+* ![Factory Method]()
 * ![Abstract Factory](#)
 * ![Builder](#)
 * ![Prototype](#)
